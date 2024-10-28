@@ -29,7 +29,15 @@ export default {
       yellow: '#FFDD2D',
       red: '#FD466E'
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        "intro-bold": ['Intro-Bold', 'sans-serif'],
+        "intro-book": ['Intro-Book', 'sans-serif'],
+        "intro-book-italic": ['Intro-Book-Italic', 'sans-serif'],
+        "intro-light": ['Intro-light', 'sans-serif'],
+        "intro-regular": ['Intro-regular', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 }
