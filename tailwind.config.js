@@ -14,20 +14,28 @@ export default {
         white: '#FFFFFF',
         paper: {
           lightBlue: '#F8FAFF',
+        },
+        button: {
+          blue: {
+            "hover": '#1252DB'
+          }
         }
       },
       text: {
         primary: '#1D253C',
-        secondary: '#666666'
+        secondary: '#666666',
+        white: '#FFFFFF'
       },
       border: {
         paper: {
           primary: '#B7C6E7'
         }
       },
-      blue: '#2B6BF3',
-      yellow: '#FFDD2D',
-      red: '#FD466E'
+      accent: {
+        blue: '#2B6BF3',
+        yellow: '#FFDD2D',
+        red: '#FD466E'
+      }
     },
     extend: {
       fontFamily: {

@@ -74,3 +74,7 @@ h5 {
 .text-price {
   @apply text-[32px] text-text-primary leading-10 font-intro-regular;
 }
+
+.text-button {
+  @apply text-[18px] text-text-primary leading-6 font-intro-regular;
+}

@@ -1,0 +1,17 @@
+.button {
+  &__blue {
+    @apply bg-accent-blue !text-text-white;
+
+    &:hover {
+      @apply bg-bg-button-blue-hover transition-colors;
+    }
+  }
+
+  &__yellow {
+    @apply bg-accent-yellow;
+
+    &:hover {
+      @apply text-text-white transition-colors;
+    }
+  }
+}
