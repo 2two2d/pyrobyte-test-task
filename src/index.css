@@ -39,40 +39,40 @@
   }
 }
 
-h1 {
-  @apply text-[40px] text-text-primary leading-6 font-intro-bold font-bold;
+h1, .h1 {
+  @apply text-[40px] text-text-primary leading-6 font-intro-bold font-bold pb-6;
 }
 
-h2 {
-  @apply text-[24px] text-text-primary leading-6 font-intro-bold font-bold;
+h2, .h2 {
+  @apply text-[24px] text-text-primary leading-6 font-intro-bold font-bold pb-6;
 }
 
-h3 {
-  @apply text-[22px] text-text-primary leading-8 font-intro-regular;
+h3, .h3 {
+  @apply text-[22px] text-text-primary leading-8 font-intro-regular pb-8;
 }
 
-h4 {
-  @apply text-[22px] text-text-primary leading-8 font-intro-book;
+h4, .h4 {
+  @apply text-[22px] text-text-primary leading-8 font-intro-book pb-8;
 }
 
-h5 {
-  @apply text-[18px] text-text-primary leading-6 font-intro-regular;
+h5, .h5 {
+  @apply text-[18px] text-text-primary leading-6 font-intro-regular pb-6;
 }
 
 .text-primary {
-  @apply text-[16px] text-text-primary leading-6 font-intro-book;
+  @apply text-[16px] text-text-secondary leading-6 font-intro-book pb-6;
 }
 
 .text-secondary {
-  @apply text-[14px] text-text-secondary leading-6 font-intro-book;
+  @apply text-[14px] text-text-primary leading-6 font-intro-book pb-6;
 }
 
 .text-menu {
-  @apply text-[18px] text-text-primary leading-[48px] font-intro-book;
+  @apply text-[18px] text-text-primary leading-[48px] font-intro-book pb-[48px];
 }
 
 .text-price {
-  @apply text-[32px] text-text-primary leading-10 font-intro-regular;
+  @apply text-[32px] text-text-primary leading-10 font-intro-regular pb-10;
 }
 
 .text-button {

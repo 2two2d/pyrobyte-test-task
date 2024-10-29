@@ -28,7 +28,8 @@ export default {
       },
       border: {
         paper: {
-          primary: '#B7C6E7'
+          primary: '#B7C6E7',
+          hover: "#2B6BF3"
         }
       },
       accent: {
