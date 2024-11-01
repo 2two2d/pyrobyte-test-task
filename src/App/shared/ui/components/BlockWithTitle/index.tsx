@@ -10,9 +10,9 @@ const BlockWithTitle = ({ title, content, className }: IBlockWithTitleProps): Re
     return (
         <div className={ `flex flex-col w-[200px] ${ className }` }>
             <div className="pb-[21px]">
-                <p className="h1 !text-[14px] pb-4 space-x-4">{ title }</p>
+                <p className="h1 !text-[14px] pb-[9px] space-x-4">{ title }</p>
 
-                <hr className="w-full h-[1px] bg-bg-mediumBlue border-none"/>
+                <hr className="w-full h-[2px] bg-bg-mediumBlue border-none"/>
             </div>
 
             { content }

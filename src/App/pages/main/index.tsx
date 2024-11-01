@@ -1,10 +1,10 @@
 import { ReactNode } from "react";
-import PaymentMethods from "@widgets/PaymentMethods";
+import About from "@widgets/About";
 
 const MainPage = (): ReactNode => {
     return (
-        <div className="mt-[20px] flex flex-col items-center">
-
+        <div className="mt-[20px] min-h-[100vh] flex flex-col items-center flex-grow">
+            <About/>
         </div>
     )
 }

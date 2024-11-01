@@ -9,7 +9,7 @@ import InstagramIcon from "@shared/ui/icons/social/InstagramIcon/Index.tsx";
 const ContactUsBlock = (): ReactElement => {
     return (
         <BlockWithTitle
-            title={"ABOUT WHOOSH"}
+            title={"CONTACT US"}
             content={
                 <div className="flex flex-col gap-[40px]">
                     <p className="h2 text-nowrap">8 800 934 5959</p>
@@ -17,7 +17,7 @@ const ContactUsBlock = (): ReactElement => {
                     <div className="w-[256px] flex gap-[12px]">
                         <FilledMapPinIcon/>
 
-                        <div className="text-primary">
+                        <div className="text-primary opacity-[64%] !text-[14px]">
                             <p>2545 W. Diversey Ave.</p>
                             <p className="text-nowrap">3rd Floor Chicago, IL 60647</p>
                         </div>

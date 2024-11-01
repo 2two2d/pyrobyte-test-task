@@ -12,6 +12,7 @@ export default {
       bg: {
         lightBlue: '#F8FAFF',
         mediumBlue: '#B7C6E7',
+        softBlue: '#C2D2F4',
         white: '#FFFFFF',
         paper: {
           lightBlue: '#F8FAFF',
@@ -25,7 +26,8 @@ export default {
       text: {
         primary: '#1D253C',
         secondary: '#666666',
-        white: '#FFFFFF'
+        white: '#FFFFFF',
+        lightBlue: '#C2D2F4'
       },
       border: {
         paper: {

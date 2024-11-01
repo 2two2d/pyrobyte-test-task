@@ -5,9 +5,9 @@ import CustomLink from "@shared/ui/components/Link";
 const MenuBlock = (): ReactElement => {
     return (
         <BlockWithTitle
-            title={"ABOUT WHOOSH"}
+            title={"MENU"}
             content={
-                <div className="flex flex-col gap-[10px]">
+                <div className="flex flex-col gap-[9px] [&_a]:!text-[14px]">
                     <CustomLink text={"About company"} to={''}/>
 
                     <CustomLink text={"Contact"} to={''}/>
