@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root * {
+  box-sizing: border-box;
+}
+
 @layer base {
   @font-face {
     font-family: 'Intro-Bold';
@@ -40,39 +44,39 @@
 }
 
 h1, .h1 {
-  @apply text-[40px] text-text-primary leading-6 font-intro-bold font-bold pb-6;
+  @apply text-[40px] text-text-primary leading-6 font-intro-bold font-bold;
 }
 
 h2, .h2 {
-  @apply text-[24px] text-text-primary leading-6 font-intro-bold font-bold pb-6;
+  @apply text-[24px] text-text-primary leading-6 font-intro-bold font-bold;
 }
 
 h3, .h3 {
-  @apply text-[22px] text-text-primary leading-8 font-intro-regular pb-8;
+  @apply text-[22px] text-text-primary leading-8 font-intro-regular;
 }
 
 h4, .h4 {
-  @apply text-[22px] text-text-primary leading-8 font-intro-book pb-8;
+  @apply text-[22px] text-text-primary leading-8 font-intro-book;
 }
 
 h5, .h5 {
-  @apply text-[18px] text-text-primary leading-6 font-intro-regular pb-6;
+  @apply text-[18px] text-text-primary leading-6 font-intro-regular;
 }
 
 .text-primary {
-  @apply text-[16px] text-text-secondary leading-6 font-intro-book pb-6;
+  @apply text-[16px] text-text-secondary leading-6 font-intro-book;
 }
 
 .text-secondary {
-  @apply text-[14px] text-text-primary leading-6 font-intro-book pb-6;
+  @apply text-[14px] text-text-primary leading-6 font-intro-book;
 }
 
 .text-menu {
-  @apply text-[18px] text-text-primary leading-[48px] font-intro-book pb-[48px];
+  @apply text-[18px] text-text-primary leading-[48px] font-intro-book;
 }
 
 .text-price {
-  @apply text-[32px] text-text-primary leading-10 font-intro-regular pb-10;
+  @apply text-[32px] text-text-primary leading-10 font-intro-regular;
 }
 
 .text-button {

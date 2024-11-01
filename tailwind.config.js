@@ -11,6 +11,7 @@ export default {
     colors: {
       bg: {
         lightBlue: '#F8FAFF',
+        mediumBlue: '#B7C6E7',
         white: '#FFFFFF',
         paper: {
           lightBlue: '#F8FAFF',
@@ -29,8 +30,18 @@ export default {
       border: {
         paper: {
           primary: '#B7C6E7',
-          hover: "#2B6BF3"
+          hover: '#2B6BF3'
+        },
+        input: {
+          default: '#C2D2F4',
+          active: '#2B6BF3'
+        },
+        button: {
+          primary: '#DDE7FD'
         }
+      },
+      icons: {
+        default: '#B7C6E7'
       },
       accent: {
         blue: '#2B6BF3',
