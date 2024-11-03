@@ -30,7 +30,7 @@ const Header = (): ReactElement => {
                 </div>
             </div>
 
-            <HeaderAdaptive className={"hidden max-mobile:flex"}/>
+            <HeaderAdaptive/>
         </>
     )
 }

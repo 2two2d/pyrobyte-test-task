@@ -1,0 +1,4 @@
+.header {
+  @apply w-full h-[64px] hidden mobile:flex flex-row bg-bg-lightBlue border-b
+    border-accent-blue border-opacity-[16%] justify-between items-center pl-4 pr-5;
+}

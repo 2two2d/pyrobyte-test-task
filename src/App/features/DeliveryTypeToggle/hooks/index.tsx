@@ -5,12 +5,17 @@ import BicycleDeliverIcon from "@shared/ui/icons/BicycleDeliverIcon";
 import CarDeliverIcon from "@shared/ui/icons/CarDeliverIcon";
 import TruckDeliverIcon from "@shared/ui/icons/TruckDeliverIcon";
 
-const useGetDeliveryType = (courierType: EDelivery): IToggleItem<EDelivery>[] => {
+interface IUseDeliveryType {
+    courierType: EDelivery,
+    containText?: boolean
+}
+
+const useGetDeliveryType = ({ courierType, containText = false }: IUseDeliveryType): IToggleItem<EDelivery>[] => {
     return [
         {
             element: <DeliveryTypeOption
                 icon={ <BicycleDeliverIcon/> }
-                text={ 'up to 10lb' }
+                { ...(containText && {text: 'up to 10lb'}) }
                 isActive={ courierType === EDelivery.courier }
                 className="rounded-l-[8px]"
             />,
@@ -19,7 +24,7 @@ const useGetDeliveryType = (courierType: EDelivery): IToggleItem<EDelivery>[] =>
         {
             element: <DeliveryTypeOption
                 icon={ <CarDeliverIcon/> }
-                text={ 'up to 130lb' }
+                { ...(containText && {text: 'up to 130lb'}) }
                 isActive={ courierType === EDelivery.car }
                 className="!border-x-0 !w-[96px]"
             />,
@@ -28,7 +33,7 @@ const useGetDeliveryType = (courierType: EDelivery): IToggleItem<EDelivery>[] =>
         {
             element: <DeliveryTypeOption
                 icon={ <TruckDeliverIcon/> }
-                text={ 'over 130lb' }
+                { ...(containText && {text: 'over 130lb'}) }
                 isActive={ courierType === EDelivery.truck }
                 className="rounded-r-[8px]"
             />,

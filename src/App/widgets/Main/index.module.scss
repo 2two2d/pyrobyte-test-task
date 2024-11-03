@@ -7,13 +7,25 @@
     & > .cover {
       @apply relative bottom-[-36px] h-[712px] -ml-[80px] -mr-[-100px];
     }
+
+    & > .mobileCover {
+      @apply hidden;
+    }
   }
 
-  @media (max-width: theme('screens.mobile')) {
-    @apply h-[1344px] flex-col;
+  @media (max-width: theme('screens.mobile.max')) {
+    @apply h-[1344px] flex-col items-center;
 
     & > .container {
-      @apply w-full;
+      @apply w-full h-full flex-col-reverse items-center pl-0 pr-0 px-4 gap-8;
+
+      & > .cover {
+        @apply hidden;
+      }
+
+      & > .mobileCover {
+        @apply block relative mt-[-190px] bottom-[250px];
+      }
     }
   }
 }

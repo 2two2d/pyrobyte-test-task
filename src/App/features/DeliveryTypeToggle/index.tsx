@@ -4,14 +4,19 @@ import {EDelivery} from "@shared/enum/delivery";
 import {useGetDeliveryType} from "@features/DeliveryTypeToggle/hooks";
 import {IClassName} from "@shared/interface/helprers";
 
-const DeliveryTypeToggle = ({ className }: IClassName): ReactNode => {
+interface IDeliveryTypeToggleProps extends IClassName {
+    variant?: 'sm' | 'lg'
+    className?: string;
+}
+
+const DeliveryTypeToggle = ({ className, variant = 'lg' }: IDeliveryTypeToggleProps): ReactNode => {
     const [courierType, setCourierType] = useState<EDelivery>(EDelivery.courier)
 
     const handleToggleClick = (value: EDelivery): void => {
         setCourierType(value)
     }
 
-    const toggleItems = useGetDeliveryType(courierType)
+    const toggleItems = useGetDeliveryType({ courierType, containText: variant === 'lg' })
 
     // использовал переменную, чтобы не было ошибки ts
     console.log(courierType)

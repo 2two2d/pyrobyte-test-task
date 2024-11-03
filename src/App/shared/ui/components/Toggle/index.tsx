@@ -33,5 +33,6 @@ const Toggle = <T,>({ items, onClick, className }: IToggleProps<T>): ReactElemen
 export default Toggle
 
 export type {
-    IToggleItem
+    IToggleItem,
+    IToggleProps
 }

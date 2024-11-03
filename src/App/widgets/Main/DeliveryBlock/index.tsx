@@ -5,7 +5,7 @@ import {IClassName} from "@shared/interface/helprers";
 
 const DeliveryBlock = ({className  }: IClassName): ReactNode => {
     return (
-        <div className={ `w-[360px] h-[716px] flex flex-col justify-between ${ className }` }>
+        <div className={ `w-[360px] h-[716px] flex flex-col justify-between mobile:!items-center ${ className }` }>
             <OrderParcel/>
 
             <TrackPackage/>

@@ -4,17 +4,17 @@ import classname from "./index.module.scss"
 
 interface ICourierTypeOptionProps {
     icon: ReactNode,
-    text: string,
     isActive: boolean,
+    text?: string,
     className?: string
 }
 
 const DeliveryTypeOption = ({ icon, text, isActive, className }: ICourierTypeOptionProps): ReactElement => {
     return (
-        <div className={ `${ isActive ? classname['card__active'] : classname['card'] } ${ className }` }>
+        <div className={ `${ isActive ? classname['card__active'] : classname['card'] } ${ className } ${ text ? '' : '!h-[56px] !pb-0' }` }>
             { icon }
 
-            <p className="text-secondary">{ text }</p>
+            {text && <p className="text-secondary">{text}</p>}
         </div>
     )
 }

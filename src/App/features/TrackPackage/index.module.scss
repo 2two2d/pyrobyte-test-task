@@ -1,3 +1,7 @@
 .wrapper {
   @apply w-[360px] h-[144px] bg-accent-yellow flex flex-col items-center gap-[14px] pt-[28px] pb-[32px] rounded-lg;
+
+  @media (max-width: theme('screens.mobile.max')) {
+    @apply w-[328px] mt-8;
+  }
 }

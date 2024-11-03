@@ -6,7 +6,7 @@ export default {
   ],
   theme: {
     screens: {
-      mobile: '360px'
+      mobile: { max: '360px' },
     },
     colors: {
       bg: {

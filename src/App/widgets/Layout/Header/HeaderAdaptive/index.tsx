@@ -5,6 +5,8 @@ import MenuIcon from "@shared/ui/icons/MenuIcon";
 import {IClassName} from "@shared/interface/helprers";
 import MenuModal from "./MenuModal";
 
+import classname from "./index.module.scss"
+
 const HeaderAdaptive = ({ className }: IClassName): ReactNode => {
     const [isMenuVisible, setIsMenuVisible] = useState<boolean>(false)
 
@@ -17,7 +19,7 @@ const HeaderAdaptive = ({ className }: IClassName): ReactNode => {
     }
 
     return (
-        <div className={ `w-full h-[64px] flex flex-row justify-between items-center pl-4 pr-5 ${ className }` }>
+        <div className={ `${ classname.header } ${ className }` }>
             <AvatarDefaultIcon/>
 
             <Logo width={ 120 } height={ 40 }/>
