@@ -1,0 +1,11 @@
+.widget {
+  @apply w-full h-[784px] flex flex-row justify-center bg-bg-lightBlue;
+
+  & > .container {
+    @apply w-[1366px] h-full relative flex flex-row pl-[103px] pt-9;
+
+    & > .cover {
+      @apply relative bottom-[-36px] h-[712px] -ml-[80px] -mr-[-100px];
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.serviceCard {
+  @apply w-[300px] h-[280px] flex flex-col items-start pl-[24px] pt-[23px];
+
+  &__default {
+    @apply rounded-lg bg-bg-lightBlue border border-border-paper-primary hover:bg-bg-white hover:border-border-paper-hover transition-colors;
+  }
+
+  &__iconUp {
+    @apply text-accent-red;
+  }
+}

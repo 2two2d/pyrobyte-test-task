@@ -1,9 +1,10 @@
-import {ReactNode} from "react";
+import { ReactNode } from "react";
 
 interface IServiceCardProps {
-    title: string
-    text: string
+    title: ReactNode
+    text: ReactNode
     icons: ReactNode[]
+    variant?: 'default' | 'iconUp'
 }
 
 export type {

@@ -8,7 +8,7 @@ import LockerIcon from "@shared/ui/icons/LockerIcon";
 
 const Header = (): ReactElement => {
     return (
-        <div className={ classname['header'] }>
+        <div className={ classname.header }>
             <div className="w-[1366px] px-8 flex items-center">
                 <div className="w-[390px] h-full flex justify-between items-center">
                     <Logo/>

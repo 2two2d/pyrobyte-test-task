@@ -5,7 +5,7 @@ const BicycleDeliverIcon = ({ ...props }: IIconSvg): ReactElement => {
     return (
         <svg
             width="68"
-            height="38"
+            height="56"
             viewBox="0 0 68 38"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"

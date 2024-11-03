@@ -3,7 +3,7 @@ import ETCIcon from "@shared/ui/icons/ETCIcon";
 
 const About = (): ReactElement => {
     return (
-        <div className="w-[1160px] h-[352px] text-primary pb-[100px]">
+        <div className="w-[1160px] h-[352px] text-primary pt-[100px]">
             <p>
                 Since 2019, LibertyWalk has successfully provided express courier delivery services in the
                 city for both individuals and legal entities, and is also a reliable logistics partner

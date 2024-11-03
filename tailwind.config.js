@@ -2,7 +2,7 @@
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,ts,jsx,tsx,scss,scc}",
   ],
   theme: {
     screens: {
@@ -13,7 +13,9 @@ export default {
         lightBlue: '#F8FAFF',
         mediumBlue: '#B7C6E7',
         softBlue: '#C2D2F4',
+        paleBlue: '#EFF4FF',
         white: '#FFFFFF',
+        transparent: 'transparent',
         paper: {
           lightBlue: '#F8FAFF',
         },
@@ -21,13 +23,21 @@ export default {
           blue: {
             "hover": '#1252DB'
           }
+        },
+        gradient: {
+          lightBlue: {
+            from: '#F2F6FF',
+            to: '#F8FAFF'
+          },
         }
       },
       text: {
         primary: '#1D253C',
         secondary: '#666666',
         white: '#FFFFFF',
-        lightBlue: '#C2D2F4'
+        lightBlue: '#C2D2F4',
+        pale: '#C4CEE5',
+        disabled: '#999999'
       },
       border: {
         paper: {
@@ -43,7 +53,8 @@ export default {
         }
       },
       icons: {
-        default: '#B7C6E7'
+        default: '#B7C6E7',
+        hover: '#1D253C'
       },
       accent: {
         blue: '#2B6BF3',

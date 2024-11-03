@@ -1,14 +1,13 @@
 import {ReactElement} from "react";
 import {IIconSvg} from "@shared/ui/icons/interface";
 
-const RightIcon = ({ ...props }: IIconSvg): ReactElement => {
+const RightArrowIcon = ({ ...props }: IIconSvg): ReactElement => {
     return (
         <svg
             width="14"
             height="24"
             viewBox="0 0 14 24"
             fill="none"
-            xmlns="http://www.w3.org/2000/svg"
             { ...props }
         >
             <path opacity="0.16" fill-rule="evenodd" clip-rule="evenodd"
@@ -20,4 +19,4 @@ const RightIcon = ({ ...props }: IIconSvg): ReactElement => {
     )
 }
 
-export default RightIcon
+export default RightArrowIcon

@@ -1,0 +1,11 @@
+.hr {
+  @apply w-full h-[2px] border-none opacity-50;
+
+  &__right {
+    @apply bg-gradient-to-l from-bg-mediumBlue to-bg-softBlue;
+  }
+
+  &__left {
+    @apply bg-gradient-to-l from-bg-softBlue to-bg-mediumBlue;
+  }
+}

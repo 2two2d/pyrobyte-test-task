@@ -5,7 +5,7 @@ import ServiceCard from "@features/ServiceCard";
 
 const ServicesBlock = (): ReactElement => {
     return (
-        <div className="w-full h-[648px] flex flex-col items-center pb-[98px]">
+        <div className="w-full h-[648px] flex flex-col items-center pt-[98px]">
             <ServiceBlockHeader/>
 
             <div className="flex gap-[50px] mt-[39px]">

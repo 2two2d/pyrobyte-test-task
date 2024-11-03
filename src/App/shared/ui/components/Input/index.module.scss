@@ -1,5 +1,5 @@
 .input {
-  @apply h-[40px] w-[184px] rounded-lg border border-border-input-default pl-2 outline-none;
+  @apply relative h-[40px] w-[184px] rounded-lg border-2 border-border-input-default pl-2 outline-none;
 
   &:hover {
     @apply bg-bg-lightBlue;
@@ -7,5 +7,18 @@
 
   &:focus {
     @apply border-border-input-active;
+  }
+
+  &__outline {
+    @extend .input;
+    @apply border-0 border-b-2 rounded-none pl-0 pt-[7px];
+
+    &:hover, &:hover ~ * {
+      @apply opacity-70 bg-bg-transparent;
+    }
+  }
+
+  & ~ p {
+    @apply relative mb-[24px] bottom-[56px];
   }
 }

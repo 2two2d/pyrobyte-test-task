@@ -1,8 +1,8 @@
 import {Link, LinkProps} from "react-router-dom";
-import {ReactElement} from "react";
+import {ReactElement, ReactNode} from "react";
 
 interface ILinkProps extends Omit<LinkProps, 'children'> {
-    text: string
+    text: ReactNode
 }
 
 const CustomLink = ({ text, className, ...props }: ILinkProps): ReactElement => {

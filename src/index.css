@@ -44,7 +44,7 @@
 }
 
 h1, .h1 {
-  @apply text-[40px] text-text-primary leading-6 font-intro-bold font-bold;
+  @apply text-[40px] text-text-primary leading-[48px] font-intro-bold font-bold;
 }
 
 h2, .h2 {
@@ -81,4 +81,8 @@ h5, .h5 {
 
 .text-button {
   @apply text-[18px] text-text-primary leading-6 font-intro-regular;
+}
+
+.shadow-small {
+  box-shadow: 0 8px 16px 0 rgba(43,107,243,0.08);
 }
