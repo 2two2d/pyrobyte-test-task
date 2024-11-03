@@ -7,7 +7,7 @@ const MenuBlock = (): ReactElement => {
         <BlockWithTitle
             title={"MENU"}
             content={
-                <div className="flex flex-col gap-[9px] [&_a]:!text-[14px]">
+                <div className="flex flex-col gap-[7px] [&_a]:!text-[14px]">
                     <CustomLink text={"About company"} to={''}/>
 
                     <CustomLink text={"Contact"} to={''}/>

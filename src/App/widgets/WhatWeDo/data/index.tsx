@@ -7,7 +7,7 @@ import PayWithCardIcon from "@shared/ui/icons/PayWithCardIcon";
 const MOCK_WHATWEDO_BLOCK_DATA: IServiceCardProps[] = [
     {
         text: 'Instant calculation of the cost in the order form, the price is updated in the process of filling out the form',
-        title: 'Online calculation',
+        title: <p>Online <span className="text-mark cursor-pointer">calculation</span></p>,
         icons: [<CalculationIcon/>]
     },
     {

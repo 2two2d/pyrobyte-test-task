@@ -8,4 +8,12 @@
       @apply relative bottom-[-36px] h-[712px] -ml-[80px] -mr-[-100px];
     }
   }
+
+  @media (max-width: theme('screens.mobile')) {
+    @apply h-[1344px] flex-col;
+
+    & > .container {
+      @apply w-full;
+    }
+  }
 }

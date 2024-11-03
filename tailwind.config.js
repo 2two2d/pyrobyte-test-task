@@ -40,6 +40,7 @@ export default {
         disabled: '#999999'
       },
       border: {
+        primary: '#C2D2F4',
         paper: {
           primary: '#B7C6E7',
           hover: '#2B6BF3'

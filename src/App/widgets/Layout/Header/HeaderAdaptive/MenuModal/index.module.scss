@@ -1,0 +1,7 @@
+.menu {
+  @apply w-[274px] h-[100vh] translate-y-2/4 relative left-5 bottom-10 -ml-[274px] z-20 bg-bg-white flex flex-col items-center py-8;
+
+  .header {
+     @apply w-[238px] h-6 flex justify-between items-center
+  }
+}

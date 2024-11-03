@@ -7,7 +7,7 @@ const ServicesBlock = (): ReactElement => {
         <BlockWithTitle
             title={"SERVICES"}
             content={
-                <div className="flex flex-col gap-[9px] [&_a]:!text-[14px]">
+                <div className="flex flex-col gap-[7px] [&_a]:!text-[14px]">
                     <CustomLink text={"Online stores"} to={''}/>
 
                     <CustomLink text={"Legal entity"} to={''}/>

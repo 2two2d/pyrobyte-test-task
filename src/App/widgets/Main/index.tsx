@@ -10,7 +10,13 @@ const MainWidget = (): ReactElement => {
             <div className={classname.container}>
                 <GreetingsBlock className="z-10"/>
 
-                <img src={MainWidgetCover} alt="image" className={classname.cover} width={ 657 } height={ 712 }/>
+                <img
+                    src={MainWidgetCover}
+                    alt="image"
+                    className={classname.cover}
+                    width={ 657 }
+                    height={ 712 }
+                />
 
                 <DeliveryBlock className="z-10"/>
             </div>

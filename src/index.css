@@ -86,3 +86,11 @@ h5, .h5 {
 .shadow-small {
   box-shadow: 0 8px 16px 0 rgba(43,107,243,0.08);
 }
+
+.text-mark {
+  @apply text-accent-blue border-b-2 border-accent-blue;
+}
+
+.text-dashed {
+  @apply block border-b border-dashed border-opacity-60;
+}

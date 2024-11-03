@@ -23,7 +23,7 @@ const ContactUsBlock = (): ReactElement => {
                         </div>
                     </div>
 
-                    <div className="w-[232px] h-[40px] mt-[29px] flex gap-[24px] [&_*]:cursor-pointer">
+                    <div className="w-[232px] h-[40px] mt-[20px] flex gap-[24px] [&_*]:cursor-pointer hover:[&_*]:opacity-90">
                         <FacebookIcon/>
 
                         <VKIcon/>
