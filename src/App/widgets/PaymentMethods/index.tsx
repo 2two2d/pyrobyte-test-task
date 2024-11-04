@@ -16,7 +16,7 @@ const PaymentMethods = (): ReactNode => {
 
             <Carousel
                 arrows={ !isThinnerThanMobile }
-                autoPlaySpeed={3000}
+                autoPlaySpeed={2000}
                 containerClass="w-[1160px] mobile:w-full mt-[70px] mobile:mt-[34px]"
                 itemClass="!flex !justify-center"
                 draggable
@@ -25,9 +25,15 @@ const PaymentMethods = (): ReactNode => {
                 pauseOnHover
                 renderButtonGroupOutside
                 shouldResetAutoplay
-                slidesToSlide={2}
+                slidesToSlide={1}
                 swipeable
-                responsive={ CAROUSEL_RESPONSIVE }
+                responsive={ {
+                    ...CAROUSEL_RESPONSIVE,
+                    mobile: {
+                        ...CAROUSEL_RESPONSIVE.mobile,
+                        items: 2
+                    }
+                }}
                 autoPlay
                 customRightArrow={ <CustomCarouselLeftArrow/> }
                 customLeftArrow={ <CustomCarouselRightArrow/> }

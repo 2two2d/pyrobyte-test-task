@@ -6,6 +6,7 @@ import {IClassName} from "@shared/interface/helprers";
 import MenuModal from "./MenuModal";
 
 import classname from "./index.module.scss"
+import {useHandleClickOutside} from "@shared/utils/use-handle-click-outside";
 
 const HeaderAdaptive = ({ className }: IClassName): ReactNode => {
     const [isMenuVisible, setIsMenuVisible] = useState<boolean>(false)
@@ -18,8 +19,13 @@ const HeaderAdaptive = ({ className }: IClassName): ReactNode => {
         setIsMenuVisible(true)
     }
 
+    const ref = useHandleClickOutside(handleClose)
+
     return (
-        <div className={ `${ classname.header } ${ className }` }>
+        <div
+            ref={ ref }
+            className={ `${ classname.header } ${ className }` }
+        >
             <AvatarDefaultIcon className="cursor-pointer hover:opacity-70"/>
 
             <Logo width={ 120 } height={ 40 }/>
