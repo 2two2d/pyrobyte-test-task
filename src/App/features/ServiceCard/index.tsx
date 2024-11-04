@@ -15,17 +15,19 @@ const ServiceCard = ({ title, text, icons, variant = 'default' } : IServiceCardP
                 <div className={ `h-[80px] mt-[17px] ml-[-14px] mobile:ml-0 flex gap-2 
                         ${variant === 'iconUp' ? 'mobile:justify-center' : ''}` }
                 >
-                    {icons.map((Item) => {
+                    {icons.map((Item, id) => {
                         return (
-                            Item
+                            <div key={ id }>
+                                { Item }
+                            </div>
                         )
                     })}
                 </div>
             </div>
 
-            <p className={`mt-[36px] text-primary ${ variant === 'iconUp' ? 'w-[320px]' : '' }`}>
-                {text}
-            </p>
+            <div className={ `mt-[36px] text-primary ${ variant === 'iconUp' ? 'w-[320px]' : '' }` }>
+                { text }
+            </div>
         </div>
     )
 }

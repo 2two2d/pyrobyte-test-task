@@ -31,8 +31,8 @@ const CourierIcon = ({ ...props }: IIconSvg): ReactElement => {
                 fill="#2B6BF3"/>
             <defs>
                 <filter id="filter0_d_534_286" x="0" y="0" width="112" height="112" filterUnits="userSpaceOnUse"
-                        color-interpolation-filters="sRGB">
-                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        colorInterpolationFilters="sRGB">
+                    <feFlood floodOpacity="0" result="BackgroundImageFix"/>
                     <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
                                    result="hardAlpha"/>
                     <feOffset dy="8"/>

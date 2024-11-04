@@ -14,14 +14,14 @@ interface IToggleProps <T> {
 const Toggle = <T,>({ items, onClick, className }: IToggleProps<T>): ReactElement => {
     return (
         <div className={`flex ${ className }`}>
-            { items.map(( { element, elementEType } ) => {
+            { items.map(( { element, elementEType }, id ) => {
 
                 const handleClick = (): void => {
                     onClick(elementEType)
                 }
 
                 return (
-                    <div onClick={ handleClick }>
+                    <div onClick={ handleClick } key={ id }>
                         { element }
                     </div>
                 )

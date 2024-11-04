@@ -13,6 +13,7 @@ const CarouselDots = ({ currentValue, itemsQuantity, handleClick }: ICarouselDot
                         onClick={ () => handleClick(id) }
                         className={`w-8 h-2 rounded-[4px] bg-accent-blue cursor-pointer 
                             ${ id === currentValue ? '' : 'opacity-[8%]' }`}
+                        key={ id }
                     ></div>
                 )
             }) }
