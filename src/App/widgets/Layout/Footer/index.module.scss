@@ -1,3 +1,15 @@
 .footer {
   @apply w-full h-[528px] flex flex-col items-center bg-bg-lightBlue shrink-0 border-t-2 border-border-primary border-opacity-50;
+
+  @media (max-width: theme('screens.mobile.max')) {
+    @apply h-[1008px];
+  }
+
+  & > .faq {
+    @apply w-[1366px] h-[272px] mt-[75px] flex flex-row gap-[60px] justify-center;
+
+    @media (max-width: theme('screens.mobile.max')) {
+      @apply w-full h-[693px] flex-wrap px-4 mt-[45px] gap-4;
+    }
+  }
 }

@@ -6,11 +6,12 @@ import ServicesBlock from "@widgets/Layout/Footer/Services";
 import MadeByBlock from "@widgets/Layout/Footer/MadeBy";
 import PrivacyPolicy from "@widgets/Layout/Footer/PrivacyPolicy";
 import classname from "./index.module.scss"
+import PrivacyPolicyAdaptive from "@widgets/Layout/Footer/PrivacyPolicyAdaptive";
 
 const Footer = (): ReactNode => {
     return (
         <div className={ classname.footer }>
-            <div className="w-[1366px] h-[272px] mt-[75px] flex flex-row gap-[60px] justify-center">
+            <div className={ classname.faq }>
                 <AboutWhooshBlock/>
 
                 <MenuBlock/>
@@ -20,9 +21,11 @@ const Footer = (): ReactNode => {
                 <ContactUsBlock/>
             </div>
 
-            <MadeByBlock className="mt-[40px]"/>
+            <MadeByBlock className="mt-[40px] mobile:hidden"/>
 
-            <PrivacyPolicy className="mt-[13px]"/>
+            <PrivacyPolicy className="mt-[13px] mobile:hidden"/>
+
+            <PrivacyPolicyAdaptive className="!hidden mobile:flex"/>
         </div>
     )
 }

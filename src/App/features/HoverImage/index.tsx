@@ -18,7 +18,11 @@ const HoverImage = ({ imageInitial, imageHover, alt }: IHoverImageProps): ReactE
     }
 
     return (
-        <div onMouseEnter={ handleMouseOver } onMouseOut={ handleMouseLeave }>
+        <div
+            onMouseEnter={ handleMouseOver }
+            onMouseOut={ handleMouseLeave }
+            className="relative"
+        >
             <img src={ isHover ? imageInitial : imageHover } alt={ alt }/>
         </div>
     )

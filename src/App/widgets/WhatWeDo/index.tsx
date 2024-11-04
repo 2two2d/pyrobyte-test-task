@@ -12,9 +12,15 @@ const WhatWeDo = (): ReactElement => {
 
             <ServicesList/>
 
-            <Button text={"Get started!"} variant={"yellow"} className="mt-9"/>
+            <Button text={"Get started!"} variant={"yellow"} className="mt-9 mobile:mt-[88px]"/>
 
-            <img src={ CityImage } alt="city" width={ 220 } height={ 504 } className="relative mt-[-504px] left-[calc(50%-110px)] bottom-[120px]"/>
+            <img
+                src={ CityImage }
+                alt="city"
+                width={ 220 }
+                height={ 504 }
+                className="relative mt-[-554px] left-[calc(50%-110px)] bottom-[120px] mobile:hidden"
+            />
         </div>
     )
 }

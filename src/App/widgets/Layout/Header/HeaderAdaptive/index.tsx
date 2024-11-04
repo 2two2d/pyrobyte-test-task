@@ -20,7 +20,7 @@ const HeaderAdaptive = ({ className }: IClassName): ReactNode => {
 
     return (
         <div className={ `${ classname.header } ${ className }` }>
-            <AvatarDefaultIcon/>
+            <AvatarDefaultIcon className="cursor-pointer hover:opacity-70"/>
 
             <Logo width={ 120 } height={ 40 }/>
 

@@ -2,10 +2,10 @@
   @apply w-full h-[784px] flex flex-row justify-center bg-bg-lightBlue;
 
   & > .container {
-    @apply w-[1366px] h-full relative flex flex-row pl-[103px] pt-9;
+    @apply w-full h-full relative flex flex-row justify-between pl-[71px] pr-8 pt-9;
 
     & > .cover {
-      @apply relative bottom-[-36px] h-[712px] -ml-[80px] -mr-[-100px];
+      @apply relative bottom-[-36px] h-[712px] -mx-[300px] left-[20px];
     }
 
     & > .mobileCover {

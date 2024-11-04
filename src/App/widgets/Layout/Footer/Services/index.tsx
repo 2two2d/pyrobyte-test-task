@@ -23,6 +23,7 @@ const ServicesBlock = (): ReactElement => {
                     <CustomLink text={"The blog"} to={''}/>
                 </div>
             }
+            className={"mobile:w-[156px]"}
         />
     )
 }

@@ -23,6 +23,7 @@ const MenuBlock = (): ReactElement => {
                     <CustomLink text={"Tariffs"} to={''}/>
                 </div>
             }
+            className={"mobile:w-[156px]"}
         />
     )
 }

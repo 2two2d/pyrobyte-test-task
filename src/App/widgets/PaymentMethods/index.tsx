@@ -1,38 +1,33 @@
-import {ReactElement} from "react";
+import {ReactNode} from "react";
 import Carousel from "react-multi-carousel";
 import {PAYMENT_METHODS_IMAGES} from "@widgets/PaymentMethods/data";
-import "react-multi-carousel/lib/styles.css"
 import CustomCarouselRightArrow from "@shared/ui/components/CustomCarouselRightArrow";
 import CustomCarouselLeftArrow from "@shared/ui/components/CustomCarouselLeftArrow";
+import "react-multi-carousel/lib/styles.css"
+import {CAROUSEL_RESPONSIVE} from "@shared/consts";
+import {useIsThinnerThanMobile} from "@shared/utils/is-thinner-than";
 
-const PaymentMethods = (): ReactElement => {
+const PaymentMethods = (): ReactNode => {
+    const { isThinnerThanMobile } = useIsThinnerThanMobile()
+
     return (
-        <div className="w-[1366px] h-[344px] flex flex-col items-center">
-            <p className="h1 mt-[98px]">Payment methods</p>
+        <div className="w-[1366px] h-[344px] mobile:w-full mobile:h-[224px] flex flex-col items-center">
+            <p className="h1 mt-[98px] mobile:mt-[54px]">Payment methods</p>
 
             <Carousel
-                arrows
+                arrows={ !isThinnerThanMobile }
                 autoPlaySpeed={3000}
-                containerClass="container-with-dots w-[1160px] mt-[70px]"
+                containerClass="w-[1160px] mobile:w-full mt-[70px] mobile:mt-[34px]"
                 itemClass="!flex !justify-center"
                 draggable
                 infinite
-                keyBoardControl
                 minimumTouchDrag={80}
                 pauseOnHover
                 renderButtonGroupOutside
                 shouldResetAutoplay
-                slidesToSlide={1}
+                slidesToSlide={2}
                 swipeable
-                responsive={{
-                    desktop: {
-                        breakpoint: {
-                            max: 3000,
-                            min: 1024
-                        },
-                        items: 6,
-                        partialVisibilityGutter: 40
-                    }}}
+                responsive={ CAROUSEL_RESPONSIVE }
                 autoPlay
                 customRightArrow={ <CustomCarouselLeftArrow/> }
                 customLeftArrow={ <CustomCarouselRightArrow/> }

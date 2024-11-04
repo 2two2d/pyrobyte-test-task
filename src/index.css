@@ -44,7 +44,7 @@
 }
 
 h1, .h1 {
-  @apply text-[40px] text-text-primary leading-[48px] font-intro-bold font-bold;
+  @apply text-[40px] mobile:text-[22px] text-text-primary leading-[48px] mobile:leading-6 font-intro-bold font-bold;
 }
 
 h2, .h2 {
@@ -93,4 +93,8 @@ h5, .h5 {
 
 .text-dashed {
   @apply block border-b border-dashed border-opacity-60;
+}
+
+.icon-after-text {
+  @apply inline-block ml-1 cursor-pointer hover:opacity-70;
 }

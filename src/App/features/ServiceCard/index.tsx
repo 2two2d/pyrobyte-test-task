@@ -12,7 +12,9 @@ const ServiceCard = ({ title, text, icons, variant = 'default' } : IServiceCardP
                 <h3 className="pb-0">
                     {title}
                 </h3>
-                <div className="h-[80px] mt-[17px] ml-[-14px] flex gap-2">
+                <div className={ `h-[80px] mt-[17px] ml-[-14px] mobile:ml-0 flex gap-2 
+                        ${variant === 'iconUp' ? 'mobile:justify-center' : ''}` }
+                >
                     {icons.map((Item) => {
                         return (
                             Item

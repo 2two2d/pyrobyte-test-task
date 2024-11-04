@@ -16,7 +16,8 @@ const AboutWhooshBlock = (): ReactElement => {
                     <TwoMapPinsIcon className="relative bottom-[95px] left-[-60px]"/>
                 </div>
             }
-            className={"w-[240px] [&_hr]:invisible"}
+            className={"w-[240px] [&_hr]:invisible mobile:ml-8 mobile:mb-[-30px] " +
+                "mobile:[&_div:nth-child(1)]:!-translate-x-[55px] mobile:[&_p:nth-child(1)]:!-mb-1"}
         />
     )
 }

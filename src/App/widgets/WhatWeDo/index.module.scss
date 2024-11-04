@@ -1,4 +1,8 @@
 .widget {
   @apply w-full h-[640px] pt-[74px] relative flex flex-col items-center bg-gradient-to-r
-    from-bg-gradient-lightBlue-from to-bg-gradient-lightBlue-to rounded-l-full
+    from-bg-gradient-lightBlue-from to-bg-gradient-lightBlue-to rounded-l-full;
+  
+  @media (max-width: theme('screens.mobile.max')) {
+    @apply h-[1096px] rounded-l-none pt-[54px];
+  }
 }

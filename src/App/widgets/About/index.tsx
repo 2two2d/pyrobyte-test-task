@@ -1,9 +1,11 @@
 import {ReactElement} from "react";
 import ETCIcon from "@shared/ui/icons/ETCIcon";
 
+import classname from "./index.module.scss"
+
 const About = (): ReactElement => {
     return (
-        <div className="w-[1160px] h-[352px] text-primary pt-[100px]">
+        <div className={ `text-primary ${ classname.block }` }>
             <p>
                 Since 2019, LibertyWalk has successfully provided express courier delivery services in the
                 city for both individuals and legal entities, and is also a reliable logistics partner
@@ -19,7 +21,7 @@ const About = (): ReactElement => {
                 and bring goods and products from the online store, arrange delivery for the online store, cafe,
                 supermarket, restaurant or any other business. Around the clock on our website you can call a courier
                 in just a minute and arrange an express courier delivery without unnecessary bureaucracy,
-                negotiations and calls to the call center. <ETCIcon className="inline-block ml-1 cursor-pointer hover:opacity-70"/>
+                negotiations and calls to the call center. <ETCIcon className="icon-after-text"/>
             </p>
         </div>
     )

@@ -4,7 +4,7 @@ import ServiceCard from "@features/ServiceCard";
 
 const ServicesList = (): ReactElement => {
     return (
-        <div className={"flex gap-[50px] justify-center"}>
+        <div className="flex mobile:flex-col mt-[-15px] mobile:mt-[35px] gap-[45px] justify-center">
             { MOCK_WHATWEDO_BLOCK_DATA.map(({ title, text, icons }) => {
                 return (
                     <ServiceCard  title={ title } text={ text } icons={ icons } variant={'iconUp'} />

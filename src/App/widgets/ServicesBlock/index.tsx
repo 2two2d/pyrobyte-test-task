@@ -5,10 +5,10 @@ import ServiceCard from "@features/ServiceCard";
 
 const ServicesBlock = (): ReactElement => {
     return (
-        <div className="w-full h-[648px] flex flex-col items-center pt-[98px]">
+        <div className="w-full h-[648px] mobile:h-auto flex flex-col items-center pt-[98px] mobile:pt-[54px] mobile:pb-[64px]">
             <ServiceBlockHeader/>
 
-            <div className="flex gap-[50px] mt-[39px]">
+            <div className="flex mobile:flex-col gap-[50px] mobile:gap-[32px] mt-[39px] mobile:mt-11">
                 { MOCK_SERVICES_BLOCK_DATA.map(({ title, text, icons }, id) => {
                     return (
                         <ServiceCard
